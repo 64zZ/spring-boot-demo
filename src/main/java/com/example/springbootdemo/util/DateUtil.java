@@ -78,7 +78,9 @@ public class DateUtil {
             LocalTime localTime = LocalTime.parse(srcDate, DateTimeFormatter.ofPattern(patStr));
             localDateTime = localDateTime.with(localTime);
         } else {
+            System.out.println();
             return now();
+
         }
         return this;
     }
