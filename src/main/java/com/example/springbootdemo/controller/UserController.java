@@ -18,10 +18,10 @@ import java.util.Map;
 public class UserController {
 
     @GetMapping
-    public Map getUserName(@RequestBody User user){
+    public Map getUserName( ){
 
         HashMap map = new HashMap<>();
-        map.put("user", user);
+        map.put("user", new User());
         return map;
     }
 }
