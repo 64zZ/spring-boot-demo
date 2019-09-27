@@ -17,7 +17,7 @@ import java.util.Map;
 @RequestMapping("/user")
 public class UserController {
 
-    @PostMapping
+    @GetMapping
     public Map getUserName(@RequestBody User user){
 
         HashMap map = new HashMap<>();
